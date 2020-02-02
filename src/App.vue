@@ -45,13 +45,13 @@ export default {
       platform: 'wechat',
       service: '',
       ticket: this.param.ticket,
-      wxToken: ''
+      sessionId: this.param.sessionId
     })
       res = await this.$axios.post('/auth',{
       platform: 'wechat',
       service: '',
       ticket: this.param.ticket,
-      wxToken: '',
+      sessionID: this.param.sessionId,
     })
 
     if (res.data.code === 200 && res.data.success && res.data.result) {
