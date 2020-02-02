@@ -53,10 +53,6 @@ export default {
       ticket: '',
       wxToken: this.param.ticket
     })
-    }catch(err){
-    this.isSuccess = false
-    }
-
 
     if (res.data.code === 200 && res.data.success && res.data.result) {
       this.isSuccess = true
@@ -64,8 +60,13 @@ export default {
     else{
       this.isSuccess = false
     }
-    // eslint-disable-next-line no-console
-    console.log(res.data)
+
+    }catch(err){
+    this.isSuccess = false
+    }
+
+
+    
 
     this.$nextTick(() => { 
       loading.close();
