@@ -44,14 +44,14 @@ export default {
       console.log({
       platform: 'wechat',
       service: '',
-      ticket: '',
-      wxToken: this.param.ticket
+      ticket: this.param.ticket,
+      wxToken: ''
     })
       res = await this.$axios.post('/auth',{
       platform: 'wechat',
       service: '',
-      ticket: '',
-      wxToken: this.param.ticket
+      ticket: this.param.ticket,
+      wxToken: '',
     })
 
     if (res.data.code === 200 && res.data.success && res.data.result) {
