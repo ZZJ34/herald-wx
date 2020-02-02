@@ -43,13 +43,13 @@ export default {
       // eslint-disable-next-line no-console
       console.log({
       platform: 'wechat',
-      service: '',
+      service: `https://tommy.seu.edu.cn/wx-login/?sessionId=${this.param.sessionId}`,
       ticket: this.param.ticket,
       sessionId: this.param.sessionId
     })
       res = await this.$axios.post('/auth',{
       platform: 'wechat',
-      service: '',
+      service: `https://tommy.seu.edu.cn/wx-login/?sessionId=${this.param.sessionId}`,
       ticket: this.param.ticket,
       sessionID: this.param.sessionId,
     })
