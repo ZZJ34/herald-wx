@@ -42,7 +42,7 @@ export default {
     try{
       res = await this.$axios.post('/auth',{
       platform: 'wechat',
-      service: `https://tommy.seu.edu.cn/wx-login/?sessionId=${this.param.sessionid}`,
+      service: `https://tommy.seu.edu.cn/wx-login/?sessionid=${this.param.sessionid}`,
       ticket: this.param.ticket,
       sessionid: this.param.sessionid,
     })
