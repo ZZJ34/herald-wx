@@ -40,18 +40,11 @@ export default {
 
     let res
     try{
-      // eslint-disable-next-line no-console
-      console.log({
-      platform: 'wechat',
-      service: `https://tommy.seu.edu.cn/wx-login/?sessionId=${this.param.sessionId}`,
-      ticket: this.param.ticket,
-      sessionId: this.param.sessionId
-    })
       res = await this.$axios.post('/auth',{
       platform: 'wechat',
-      service: `https://tommy.seu.edu.cn/wx-login/?sessionId=${this.param.sessionId}`,
+      service: `https://tommy.seu.edu.cn/wx-login/?sessionId=${this.param.sessionid}`,
       ticket: this.param.ticket,
-      sessionID: this.param.sessionId,
+      sessionid: this.param.sessionid,
     })
 
     if (res.data.code === 200 && res.data.success && res.data.result) {
