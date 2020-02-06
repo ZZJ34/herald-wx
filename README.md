@@ -1,29 +1,16 @@
 # herald-wx
 
-## Project setup
+小猴偷米微信身份认证跳转页面
+
+## 补全依赖
 ```
 yarn install
 ```
 
-### Compiles and hot-reloads for development
+## 项目打包
 ```
-yarn run serve
-```
-
-### Compiles and minifies for production
-```
-yarn run build
+yarn build
 ```
 
-### Run your tests
-```
-yarn run test
-```
 
-### Lints and fixes files
-```
-yarn run lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
